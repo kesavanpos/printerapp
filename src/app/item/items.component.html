@@ -1,0 +1,45 @@
+<ActionBar title="Details"></ActionBar>
+
+<StackLayout>    
+<ScrollView>
+    <StackLayout margin="10" verticalAlignment="center">
+        <StackLayout class="form" padding="15" backgroundColor="#FFFFFF">
+            <StackLayout class="input-field">
+                <Label text="xPos" class="label font-weight-bold m-b-5"></Label>
+                <TextField class="input" [(ngModel)]="input.xPos"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Label text="yPos" class="label font-weight-bold m-b-5"></Label>
+                <TextField class="input" [(ngModel)]="input.yPos"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Label text="startPage" class="label font-weight-bold m-b-5"></Label>
+                <TextField class="input" [(ngModel)]="input.startPage"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Label text="endPage" class="label font-weight-bold m-b-5"></Label>
+                <TextField class="input" [(ngModel)]="input.endPage"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <Label text="width" class="label font-weight-bold m-b-5"></Label>
+                <TextField class="input" [(ngModel)]="input.width"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+            <Button class="btn btn-primary w-full" text="Click for print !" (tap)="print($event)"></Button>    
+            <Button text="Check Connect Printer !" (tap)="CheckPrinterConnected($event)"></Button>  
+
+            <Button text="Get Paired Devices !" (tap)="GetPairedDevices($event)"></Button>  
+        
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
+
+
+    
+
+</StackLayout>

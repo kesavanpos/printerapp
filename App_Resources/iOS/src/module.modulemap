@@ -1,0 +1,5 @@
+module NativeScriptExample {
+    umbrella header "printerwrapper.h"
+    export *
+    module * { export * }
+}
